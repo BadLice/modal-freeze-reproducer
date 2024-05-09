@@ -2,12 +2,17 @@
 
 ![Build](https://github.com/BadLice/modal-freeze-reproducer/workflows/Pre%20Merge%20Checks/badge.svg)
 
-This is your new React Native Reproducer project.
+This is a project to create a minimum reproducible example of a randomly occurring bug in react-navigation library.
+It is advised to run this project on a physical iOS device to increase the chances of the bug to occur.
 
-## Reproducer todo list
+related issues:
+- https://github.com/react-navigation/react-navigation/issues/11981 
+- https://github.com/software-mansion/react-native-screens/issues/2125
 
-- [x] Create a new reproducer project.
-- [ ] Git clone your repository locally.
-- [ ] Edit the project to reproduce the failure you're seeing.
-- [ ] Push your changes, so that Github Actions can run the CI.
-- [ ] Make sure the repository is public and share the link with the issue you reported.
+to run this project:
+- run `cd ReproducerApp`
+- run `yarn install`
+- run `cd ios`
+- run `bundle install`
+- run `bundle exec pod install`
+- run `yarn run start` and `yarn run ios` simultaneously
